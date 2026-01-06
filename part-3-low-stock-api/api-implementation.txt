@@ -1,0 +1,36 @@
+Part 3: API Implementation (35 minutes)
+Implement an endpoint that returns low-stock alerts for a company.
+Business Rules (discovered through previous questions):
+Low stock threshold varies by product type
+Only alert for products with recent sales activity
+Must handle multiple warehouses per company
+Include supplier information for reordering
+Endpoint Specification:
+GET /api/companies/{company_id}/alerts/low-stock
+
+Expected Response Format:
+{
+  "alerts": [
+    {
+      "product_id": 123,
+      "product_name": "Widget A",
+      "sku": "WID-001",
+      "warehouse_id": 456,
+      "warehouse_name": "Main Warehouse",
+      "current_stock": 5,
+      "threshold": 20,
+      "days_until_stockout": 12,
+      "supplier": {
+        "id": 789,
+        "name": "Supplier Corp",
+        "contact_email": "orders@supplier.com"
+      }
+    }
+  ],
+  "total_alerts": 1
+}
+
+Tasks:
+Write Implementation: Use any language/framework (Python/Flask, Node.js/Express, etc.)
+Handle Edge Cases: Consider what could go wrong
+Explain Approach: Add comments explaining your logic

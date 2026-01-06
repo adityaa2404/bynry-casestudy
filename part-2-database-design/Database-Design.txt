@@ -1,0 +1,16 @@
+Part 2: Database Design 
+
+Based on the requirements below, design a database schema. Note: These requirements are intentionally incomplete - you should identify what's missing.
+
+Given Requirements:
+Companies can have multiple warehouses
+Products can be stored in multiple warehouses with different quantities
+Track when inventory levels change
+Suppliers provide products to companies
+Some products might be "bundles" containing other products
+
+Your Tasks:
+Design Schema: Create tables with columns, data types, and relationships
+Identify Gaps: List questions you'd ask the product team about missing requirements
+Explain Decisions: Justify your design choices (indexes, constraints, etc.)
+Format: Use any notation (SQL DDL, ERD, text description, etc.)
