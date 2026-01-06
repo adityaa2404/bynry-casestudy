@@ -1,14 +1,17 @@
-StockFlow – Backend Case Study
-Backend Engineering Intern | Bynry
+Markdown
 
+# StockFlow – Backend Case Study
+### Backend Engineering Intern | Bynry
 
-Case Study Document Link : https://surl.li/zrtify
+**Case Study Document Link:** [https://surl.li/zrtify](https://surl.li/zrtify)
 
+This repository contains my solution to the backend case study for the Backend Engineering Intern role at Bynry. The focus is on **code quality**, **data modeling**, and **API design** for a B2B inventory management system.
 
-This repository contains my solution to the backend case study for the Backend Engineering Intern role at Bynry.
-The focus is on code quality, data modeling, and API design for a B2B inventory management system.
+---
 
-Repository Structure
+## Repository Structure
+
+```text
 .
 ├── part-1-code-review/
 ├── part-2-database-design/
@@ -16,37 +19,41 @@ Repository Structure
 └── README.md
 
 
-
 Part 1: Code Review & Debugging
+Reviewed a faulty API endpoint and identified technical and business logic issues related to:
 
-  Reviewed a faulty API endpoint and identified technical and business logic issues related to:
+Data consistency
 
-  Data consistency
-  Transactions
-  REST best practices
-  Business rule violations
+Transactions
+
+REST best practices
+
+Business rule violations
 
 Part 2: Database Design
+Designed a normalized schema supporting:
 
-  Designed a normalized schema supporting:
-  Multiple companies and warehouses
-  Inventory tracking and history
-  Supplier relationships
-  Product bundles
+Multiple companies and warehouses
+
+Inventory tracking and history
+
+Supplier relationships
+
+Product bundles
 
 Includes schema definition, ER diagram, and design justifications.
 
 Part 3: Low-Stock Alerts API
+Implemented an API endpoint to return low-stock alerts for a company.
 
-  Implemented an API endpoint to return low-stock alerts for a company.
+Endpoint
+GET /api/companies/{company_id}/alerts/low-stock
 
-Endpoint : GET /api/companies/{company_id}/alerts/low-stock
+Key Features
+Threshold-based alerts
 
+Recent sales filtering
 
-  Key Features
+Multi-warehouse support
 
-   Threshold-based alerts
-   Recent sales filtering
-   Multi-warehouse support
-   Supplier details for reordering
-
+Supplier details for reordering
