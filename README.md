@@ -3,6 +3,8 @@ Backend Engineering Intern | Bynry
 
 
 Case Study Document Link : https://surl.li/zrtify
+
+
 This repository contains my solution to the backend case study for the Backend Engineering Intern role at Bynry.
 The focus is on code quality, data modeling, and API design for a B2B inventory management system.
 
